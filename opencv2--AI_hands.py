@@ -39,7 +39,7 @@ class Config:
 
 
 # ==========================================
-# 2. 摄像头线程 (保持原有逻辑不变)
+# 2. 摄像头线程 
 # ==========================================
 class VideoThread(QThread):
     change_pixmap_signal = pyqtSignal(np.ndarray)
@@ -442,4 +442,5 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
+
     sys.exit(app.exec_())
